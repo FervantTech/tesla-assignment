@@ -126,6 +126,26 @@ header{
     height: 20vh;
     display: flex ;
     gap: 10px;
-
+    padding-bottom: 30px;
 }
+
+footer{
+    display: flex ;
+    justify-content: center ;
+    align-items:space-between ;
+    width: 100%;
+    gap: 20px;    
+}
+
+.footer-links{
+    display: flex ;
+    text-decoration: none;
+    color: rgb(23, 26, 32);
+    font-size: 12px;
+}
+
+
+    
+
+
 
