@@ -6,11 +6,11 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
-
 }
 
-.body{
-    margin: 0;
+body{
+        margin: 0;
+        padding-top: 56px;
 }
 
 .logo{
@@ -28,6 +28,7 @@
     font-size: 14px;
     background-color: white;
 }
+
 .nav-links{
  
 }
@@ -35,6 +36,7 @@
     color: rgb(23, 26, 32);
     text-decoration: none;
     padding: 4px 16px;
+    font-size: 14px;
 }
 
 .nav-icon{
@@ -55,19 +57,100 @@ header{
     left: 0;
     z-index: 10;
 }
-
+h1{
+    font-size: 48px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin-top: 45px;
+}
+h2{
+    font-size: 34px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(92, 94, 98);  
+}
+h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255); 
+}
+h5{
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
 .hero-section{
-    height: 79.55vh;
+    width: 100vw;
+    height: calc(79.55vh - 56px);
     background: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-Y-Desktop.jpg') center/cover no-repeat;
+    background-size: cover;
+    
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    color: white;
-    text-align: center;
+
+}
+.buttons-hero{
+margin-top: 20px;
+}
+.drk-button{
+    border: none;
+    color: rgb(57, 60, 65);
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+    padding: 4px;  
+    border-radius: 4px;
+    border: 3px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.lght-button{
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(62, 106, 225);
+    width: 200px;
+    height: 40px;
+    padding: 4px;  
+    border: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.long-button{
+    border: none;
+    color: rgb(57, 60, 65);
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 40px;
+    padding: 4px;  
+    border-radius: 4px;
+    border: 3px;
+    margin-left: 4px;
+    cursor: pointer;   
+}
+.vehicles{
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+    flex-wrap: wrap; 
+    height: auto;  
 }
 
 .model-s{
-    width: 112.40vh;
+    flex: 1;
+    min-width: 250px;
     height: 30vh;
     background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-3-Desktop-US_PR_MX.jpg');
     border-radius: 10px;
@@ -75,11 +158,16 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-        
-}
+    padding-left: 10px;
+    padding-bottom: 10px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .model-y{
-    width: 112.40vh;
+    flex: 1;
+    min-width: 250px;
     height: 30vh;
     background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Vehicle-Card-Model-Y-Desktop-US-Snow.jpg');
     border-radius: 10px;
@@ -87,11 +175,17 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
-
 .model-3{
-    width: 112.40vh;
+    flex: 1;
+    min-width: 250px;
     height: 30vh;
     background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-S-Desktop-US-v3.jpg');
     border-radius: 10px;
@@ -99,10 +193,16 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+    padding-left: 10px;
+    padding-bottom: 10px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .model-x{
-    width: 112.40vh;
+    flex: 1;
+    min-width: 250px;
     height: 30vh;
     background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-X-Desktop-US_PR_MX.jpg');
     border-radius: 10px;
@@ -110,24 +210,195 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .buttons{
     height: auto;
 }
-
-.lght-button{
-    
-}
-    
-.vehicles{
-    
-    padding-top: 30px;
-    margin: 30px;
-    height: 20vh;
-    display: flex ;
+.cards{
+    padding-top: 50px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     gap: 10px;
-    padding-bottom: 30px;
 }
+
+.card-offers{
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start ;
+    align-content: space-between ;
+    background-color: rgb(233, 233, 233);
+    padding-right: 10px;
+  
+}
+.card-offers-left{
+    padding-left: 40px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+.card-heroes{
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start ;
+    align-content: space-between ;
+    background-color: rgb(233, 233, 233);
+    margin-right: 60px;
+    padding-left: 10px;
+}
+  .card-heroes-left{
+    padding-left: 40px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;  
+    padding-right: 10px;  
+}  
+.benefits{
+ 
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+    flex-wrap: wrap; 
+    height: auto;  
+}
+
+.self-driving{
+    flex: 1;
+    width: 500px;
+    height: 50vh;
+    background-image: url(./Assets/Homepage-FSD-Safety-Report-Split-Desktop.avif);
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.features{
+    flex: 1;
+    min-width: 250px;
+    height: 50vh;
+    background-image: url(./Assets/Homepage-Features-Desktop.avif);
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.locations{
+
+}
+
+.location-image{
+
+}
+
+.tesla-equipment{
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+    flex-wrap: wrap; 
+    height: auto;  
+}
+
+.solar-panels{
+    flex: 1;
+    min-width: 250px;
+    height: 30vh;
+    background-image: url(./Assets/Homepage-Card-Solar-Panels-Desktop-v2.avif);
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.powerwall{
+    flex: 1;
+    min-width: 250px;
+    height: 30vh;
+    background-image: url(./Assets/Homepage-Card-Powerwall-Desktop.avif);
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mega-pack{
+    flex: 1;
+    min-width: 250px;
+    height: 30vh;
+    background-image: url(./Assets/Homepage-Card-Megapack-Desktop-v2.avif);
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.solar-roof{
+    flex: 1;
+    min-width: 250px;
+    height: 30vh;
+    background-image: url(./Assets/Homepage-Card-Solar-Roof-Desktop-v2.avif);
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 
 footer{
     display: flex ;
@@ -143,9 +414,3 @@ footer{
     color: rgb(23, 26, 32);
     font-size: 12px;
 }
-
-
-    
-
-
-
