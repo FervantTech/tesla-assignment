@@ -82,12 +82,23 @@ h5{
     font-size: 17px;
     color: rgb(255, 255, 255);
 }
+
+h6{ 
+        font-size: 48px;
+        font-weight: 500;
+        color: rgb(23, 26, 32);
+}
 a{
     color: rgb(255, 255, 255);
     text-decoration: underline;
     font-size: 20px;
     font-weight: 500;
     margin-top: 5px;
+}
+.p-charge{
+    color: rgb(92, 94, 98);
+    font-size: 20px;
+    font-weight: 400px;
 }
 .hero-section{
     width: 100vw;
@@ -327,17 +338,57 @@ border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 10px;
+    padding: 30px;
 }
 .charger-icons{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
+.charger-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+.charger-buttons{
+    margin-left: 30px;
+
+}
+.light-charger-button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(235, 235, 235);
+    padding-left: 30px;
+    width: 140px;
+    height: 35px;
+    padding: 10px 0;  
+    border: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.dark-charger-button{
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding-left: 30px;
+    width: 140px;
+    height: 35px;
+    padding: 10px 0;  
+    border: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
 .tesla-equipment{
     display: flex;
     gap: 10px;
     padding: 30px;
     flex-wrap: wrap; 
     height: auto;  
+    margin-top: 50px;
 }
 
 .solar-panels{
